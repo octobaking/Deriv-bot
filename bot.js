@@ -1100,7 +1100,7 @@ function handleMessage(data) {
     }
 }
 function connectWebSocket(){
-    ws = new WebSocket(`wss://ws.deriv.com/websockets/v3?app_id=${CONFIG.APP_ID}`);
+    ws = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${CONFIG.APP_ID}`);
     ws.on('open',()=>{
         log('WebSocket connected');
         safeSend({ authorize:CONFIG.API_TOKEN });
