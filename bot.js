@@ -53,8 +53,8 @@ const path = require('path');
 
 // ========================== CONFIGURATION ==========================
 const CONFIG = {
-    APP_ID: '33vbZ2gFEB1GQsZFMGeoY',
-    API_TOKEN: 'pat_c748a59682e299a821cac32410ec052e14ac8687b283c46ab926fb3f04659d09',
+    APP_ID: '33vb22gFE81QQsZFHGe0Y',  // ← Copy from your dashboard
+API_TOKEN: 'pat_c748a59682e299a821cac32410ec052e14ac8687b283c46ab926fb3f04659d09',
     TELEGRAM: { TOKEN: '8428234507:AAG4RkuOnz4BNK0i2iFtW2U9TfCVf1p7T8', CHAT_ID: '83274404422' },
     STAKE: 1,
     MAX_CONCURRENT: 25,
