@@ -53,8 +53,8 @@ const path = require('path');
 
 // ========================== CONFIGURATION ==========================
 const CONFIG = {
-    APP_ID: process.env.APP_ID || '33vbZ2gFEB1GQsZFMGeoY',
-    API_TOKEN: process.env.DERIV_TOKEN || '',
+    APP_ID: '33vbZ2gFEB1GQsZFMGeoY',
+    API_TOKEN: 'pat_c748a59682e299a821cac32410ec052e14ac8687b283c46ab926fb3f04659d09',
     TELEGRAM: { TOKEN: '8428234507:AAG4RkuOnz4BNK0i2iFtW2U9TfCVf1p7T8', CHAT_ID: '83274404422' },
     STAKE: 1,
     MAX_CONCURRENT: 25,
@@ -1100,7 +1100,7 @@ function handleMessage(data) {
     }
 }
 function connectWebSocket(){
-    ws = new WebSocket(`wss://ws.binaryws.com/websockets/v3?app_id=${CONFIG.APP_ID}`);
+    ws = new WebSocket(`wss://ws.deriv.com/websockets/v3?app_id=${CONFIG.APP_ID}`);
     ws.on('open',()=>{
         log('WebSocket connected');
         safeSend({ authorize:CONFIG.API_TOKEN });
