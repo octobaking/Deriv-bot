@@ -44,7 +44,7 @@ const path = require('path');
 // ========================== CONFIGURATION ==========================
 const CONFIG = {
     APP_ID: '1089',
-    API_TOKEN: '', pat_5ea8d7a997aa73cec2ac49bb39b9ddac50d30f36b30a98d79e47c475718f31a2',// DEMO token
+    API_TOKEN: '', be50afb504b3ad44',// DEMO token
     TELEGRAM: { TOKEN: '8428234507:AAG4RkuOnz4BNK0i2iFtW2U9TfCVf1p7T8', CHAT_ID: '83274404422' },
     STAKE: 1,                         // Base stake ($1), but volatility targeting may adjust it
     MAX_CONCURRENT: 25,
