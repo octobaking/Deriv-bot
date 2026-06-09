@@ -53,7 +53,7 @@ const path = require('path');
 
 // ========================== CONFIGURATION ==========================
 const CONFIG = {
-    APP_ID: '33vbZ2gFE8i0QsZFMGeoY',
+    APP_ID: process.env.APP_ID || '33vbZ2gFEB1GQsZFMGeoY',
     API_TOKEN: process.env.DERIV_TOKEN || '',
     TELEGRAM: { TOKEN: '8428234507:AAG4RkuOnz4BNK0i2iFtW2U9TfCVf1p7T8', CHAT_ID: '83274404422' },
     STAKE: 1,
