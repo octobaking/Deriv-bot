@@ -52,18 +52,16 @@ const socketIo = require('socket.io');
 const path = require('path');
 
 // ========================== CONFIGURATION ==========================
-const CONFIG = { 
-    APP_ID: '33vbZ2gFE8i0QsZFMGeoY', // ✅ Your new App ID 
-    API_TOKEN: 'pat_c748a59682e299a821cac32410ec052e14ac8687b283c46ab926fb3f04659d09', // ✅ Your new API token
-    // ... rest of your configuration
-};
+const CONFIG = {
+    APP_ID: '33vbZ2gFE8i0QsZFMGeoY',
+    API_TOKEN: 'pat_c748a59682e299a821cac32410ec052e14ac8687b283c46ab926fb3f04659d09',
     TELEGRAM: { TOKEN: '8428234507:AAG4RkuOnz4BNK0i2iFtW2U9TfCVf1p7T8', CHAT_ID: '83274404422' },
-    STAKE: 1,                         // Base stake ($1), but volatility targeting may adjust it
+    STAKE: 1,
     MAX_CONCURRENT: 25,
     COOLDOWN_MINUTES: 2,
-    DAILY_LOSS_LIMIT: 25,             // Stop trading if daily loss exceeds $25
+    DAILY_LOSS_LIMIT: 25,
     CANDLE_COUNT: 500,
-    GRANULARITY: 60,                  // 1‑minute candles
+    GRANULARITY: 60,
     DASHBOARD_PORT: 3000,
     ATR_SL_MULTIPLIER: 2.5,
     ATR_TP_MULTIPLIER: 3.0,
