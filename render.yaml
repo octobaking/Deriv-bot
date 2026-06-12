@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: weltrade-mt5
+    runtime: docker
+    plan: free
+    
+    dockerfilePath: ./Dockerfile
+    
+    envVars:
+      - key: CUSTOM_USER
+        value: weltrade
+      - key: PASSWORD
+        value: weltrade2024
+    
+    ports:
+      - port: 3000
+        protocol: http
+      - port: 8001
+        protocol: http
+      - port: 1234
+        protocol: tcp
+    
+    healthCheckPath: /
