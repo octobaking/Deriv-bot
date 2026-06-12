@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  mt5:
+    image: gmag11/metatrader5_vnc:latest
+    container_name: mt5-weltrade
+    
+    ports:
+      - "3000:3000"
+      - "8001:8001"
+      - "1234:1234"
+    
+    volumes:
+      - ./config:/config
+    
+    environment:
+      - CUSTOM_USER=weltrade
+      - PASSWORD=weltrade2024
+    
+    restart: unless-stopped
